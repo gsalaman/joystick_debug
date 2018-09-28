@@ -1,5 +1,6 @@
 
-#include "ver_led.h"
+
+//#include "ver_led.h"
 
 #if !defined(TRUE) 
 #define TRUE 1
@@ -25,7 +26,7 @@ void setup()
   // setting of your XBee.
   XBee.begin(9600);
   Serial.begin(9600);
-  ver_led_setup(3);
+//  ver_led_setup(3);
 }
 
 void check_and_print_debug( void )
@@ -62,6 +63,6 @@ void check_and_print_debug( void )
 
 void loop()
 {
-  ver_led_run();
+ // ver_led_run();
   check_and_print_debug();
 }
